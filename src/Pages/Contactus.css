@@ -1,0 +1,82 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-image: linear-gradient(90deg,rgb(233, 231, 231) 10%, white 70%, rgb(233, 231, 231) 100%);
+    box-shadow: 0px 10px 10px rgb(184, 181, 181);
+    padding-left: 5vw;
+    /* align-items: center; */
+  }
+  
+  .contact-us-container h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin: 0;
+  }
+  
+  .form-group label {
+    /* margin: 0; */
+    color: black;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 30vw;
+  }
+  .form-group input[type="email"]{
+    max-width: 30vw;
+  }
+  .form-group input[type="text"]{
+    max-width: 20vw;
+  }
+  textarea {
+ /* Adjust height according to your design */
+    height: 20vh;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 15vw;
+    padding: 1vh 1vw;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  @media screen and (max-width:768px){
+    .contact-us-container{
+      align-items: center;
+      width: 80vw;
+      padding-left:0 ;
+    }
+    .form-group input[type="email"]{
+      max-width: 60vw;
+    }
+    .form-group input[type="text"]{
+      max-width: 60vw;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      max-width: 60vw;
+      
+    }
+
+  }
